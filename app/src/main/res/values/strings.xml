@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Al-Iman Community Live Chat</string>
+    <string name="action_leave">Keluar</string>
+    <string name="action_send">Kirim</string>
+    <string name="prompt_message">Pesan</string>
+
+    <string name="connect">Connected</string>
+    <string name="disconnect">Disconnected, Internetnya yang stabil lah njing</string>
+    <string name="error_connect">Gagal Connect, miskin kuota nih</string>
+
+    <!-- messages -->
+    <string name="message_welcome">Nah satu biji masuk</string>
+    <plurals name="message_participants">
+        <item quantity="one">cuma\'s %d yang aktif</item>
+        <item quantity="other">rame, ada %d yang aktif</item>
+    </plurals>
+    <string name="message_user_joined">%s bergabung</string>
+    <string name="message_user_left">%s keluar</string>
+    <string name="user_action_typing">sedang mengetik njing...</string>
+
+</resources>
