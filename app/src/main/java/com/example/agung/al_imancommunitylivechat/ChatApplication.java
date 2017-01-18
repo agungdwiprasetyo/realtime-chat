@@ -16,7 +16,8 @@ public class ChatApplication extends Application {
     private Socket mSocket;
     {
         try {
-            mSocket = IO.socket(Constants.CHAT_SERVER_URL);
+            // set url server untuk socket.io (harus menggunakan NodeJS)
+            mSocket = IO.socket(Server.CHAT_SERVER_URL);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }

@@ -9,5 +9,6 @@
     <fragment
         class="com.example.agung.al_imancommunitylivechat.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_main" />
 </FrameLayout>

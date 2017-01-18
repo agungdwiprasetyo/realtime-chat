@@ -21,11 +21,8 @@ import org.json.JSONObject;
  */
 
 public class LoginActivity extends Activity {
-
     private EditText mUsernameView;
-
     private String mUsername;
-
     private Socket mSocket;
 
     @Override
@@ -37,11 +34,10 @@ public class LoginActivity extends Activity {
         mSocket = app.getSocket();
 
         // Set up the login form.
-        mUsernameView = (EditText) findViewById(R.id.username_input);
-        mUsernameView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-                if (id == R.id.login || id == EditorInfo.IME_NULL) {
+        mUsernameView = (EditText) findViewById(R.id.inputUsername);
+        mUsernameView.setOnEditorActionListener(new TextView.OnEditorActionListener(){
+            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent){
+                if(id == R.id.login || id == EditorInfo.IME_NULL){
                     attemptLogin();
                     return true;
                 }
@@ -49,7 +45,7 @@ public class LoginActivity extends Activity {
             }
         });
 
-        Button signInButton = (Button) findViewById(R.id.sign_in_button);
+        Button signInButton = (Button) findViewById(R.id.tombolMasuk);
         signInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,11 +63,6 @@ public class LoginActivity extends Activity {
         mSocket.off("login", onLogin);
     }
 
-    /**
-     * Attempts to sign in the account specified by the login form.
-     * If there are form errors (invalid username, missing fields, etc.), the
-     * errors are presented and no actual login attempt is made.
-     */
     private void attemptLogin() {
         // Reset errors.
         mUsernameView.setError(null);
@@ -98,7 +89,6 @@ public class LoginActivity extends Activity {
         @Override
         public void call(Object... args) {
             JSONObject data = (JSONObject) args[0];
-
             int numUsers;
             try {
                 numUsers = data.getInt("numUsers");

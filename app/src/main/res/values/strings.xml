@@ -5,6 +5,7 @@
     <string name="action_leave">Keluar</string>
     <string name="action_send">Kirim</string>
     <string name="prompt_message">Pesan</string>
+    <string name="hint_name">Masukin namamu mbah...</string>
 
     <string name="connect">Connected</string>
     <string name="disconnect">Disconnected, Internetnya yang stabil lah njing</string>

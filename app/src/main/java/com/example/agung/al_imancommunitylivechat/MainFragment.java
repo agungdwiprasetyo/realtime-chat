@@ -37,7 +37,6 @@ import io.socket.emitter.Emitter;
  */
 
 public class MainFragment extends Fragment {
-
     private static final int REQUEST_LOGIN = 0;
 
     private static final int TYPING_TIMER_LENGTH = 600;

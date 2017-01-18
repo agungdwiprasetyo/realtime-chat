@@ -16,19 +16,18 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/username_input"
+            android:id="@+id/inputUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Masukin namamu njing.."
+            android:hint="@string/hint_name"
             android:imeActionId="@+id/login"
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionUnspecified"
             android:inputType="textPersonName"
             android:maxLength="14"
-            android:maxLines="1"
-            android:singleLine="true"/>
+            android:maxLines="1" />
         <Button
-            android:id="@+id/sign_in_button"
+            android:id="@+id/tombolMasuk"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
